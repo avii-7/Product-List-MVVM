@@ -18,6 +18,10 @@ final class ProductListViewController: UIViewController {
         super.viewDidLoad()
         configuration()
     }
+    
+    @IBAction func DidAddProductTapped() {
+        viewModel.addProduct(product: .init(title: "Pencil"))
+    }
 }
 
 extension ProductListViewController {

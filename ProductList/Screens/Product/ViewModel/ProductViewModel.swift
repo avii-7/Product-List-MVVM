@@ -20,9 +20,9 @@ final class ProductViewModel {
         
         APIManager.shared.request(
             modelType: [Product].self,
-            endPointType: EndPointItem.products
+            endPoint: EndPointItem.products
         ) { response in
-
+            
             eventHandler(.dataFetchingFinished)
             
             switch response {
@@ -31,6 +31,23 @@ final class ProductViewModel {
                 eventHandler(.dataLoaded)
             case .failure(let error):
                 eventHandler(.dataFetchingFailed(error))
+            }
+        }
+    }
+    
+    func addProduct(product: AddProduct) {
+        
+        APIManager.shared.request(
+            modelType: AddProductResponse.self,
+            endPoint: EndPointItem.addProduct(product)
+        ) {
+            response in
+            
+            switch response {
+            case .success(let response):
+                print(response.id)
+            case .failure(let error):
+                print(error.localizedDescription)
             }
         }
     }

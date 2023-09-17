@@ -22,6 +22,7 @@
 		861642592AB6297600F4F9AD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 861642582AB6297600F4F9AD /* Kingfisher */; };
 		8616425B2AB629B300F4F9AD /* UIImageView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8616425A2AB629B300F4F9AD /* UIImageView + Extension.swift */; };
 		868E1D902AB6CB5400B8DC14 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868E1D8F2AB6CB5400B8DC14 /* EndPointType.swift */; };
+		868E1D972AB6EFB200B8DC14 /* AddProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868E1D962AB6EFB200B8DC14 /* AddProduct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		861642542AB60E5B00F4F9AD /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
 		8616425A2AB629B300F4F9AD /* UIImageView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extension.swift"; sourceTree = "<group>"; };
 		868E1D8F2AB6CB5400B8DC14 /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		868E1D962AB6EFB200B8DC14 /* AddProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProduct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 		861642482AB5F02D00F4F9AD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				868E1D962AB6EFB200B8DC14 /* AddProduct.swift */,
 				861642492AB5F18C00F4F9AD /* Product.swift */,
 			);
 			path = Model;
@@ -267,6 +270,7 @@
 				861642502AB602CD00F4F9AD /* ProductViewModel.swift in Sources */,
 				8616424E2AB5F79800F4F9AD /* Constant.swift in Sources */,
 				8616422C2AB5EB8D00F4F9AD /* SceneDelegate.swift in Sources */,
+				868E1D972AB6EFB200B8DC14 /* AddProduct.swift in Sources */,
 				868E1D902AB6CB5400B8DC14 /* EndPointType.swift in Sources */,
 				8616424A2AB5F18C00F4F9AD /* Product.swift in Sources */,
 			);

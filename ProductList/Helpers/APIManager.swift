@@ -24,13 +24,21 @@ final class APIManager {
     
     func request<T: Decodable>(
         modelType: T.Type,
-        endPointType: EndPointType,
+        endPoint: EndPointItem,
         completionHandler: @escaping Handler<T>
     ) {
         
-        guard let url = endPointType.url else { return }
+        guard let url = endPoint.url else { return }
         
-        URLSession.shared.dataTask(with: url) { data, response, error in
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = endPoint.method.rawValue
+        urlRequest.allHTTPHeaderFields = endPoint.headers
+        
+        if let body = endPoint.body {
+            urlRequest.httpBody = try? JSONEncoder().encode(body)
+        }
+        
+        URLSession.shared.dataTask(with: urlRequest) { data, response, error in
             guard let data, error == nil else {
                 completionHandler(.failure(.invalidResponse))
                 return

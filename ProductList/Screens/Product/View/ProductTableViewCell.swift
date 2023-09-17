@@ -35,8 +35,4 @@ final class ProductTableViewCell: UITableViewCell {
         priceLabel.text = "$ \(String(model.price))"
         productImageView.setImage(with: model.image)
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
 }
