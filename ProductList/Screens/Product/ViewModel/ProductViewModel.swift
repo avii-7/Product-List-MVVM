@@ -18,8 +18,13 @@ final class ProductViewModel {
         
         eventHandler(.dataFetchingStarted)
         
-        APIManager.shared.fetchProducts { response in
+        APIManager.shared.request(
+            modelType: [Product].self,
+            endPointType: EndPointItem.products
+        ) { response in
+
             eventHandler(.dataFetchingFinished)
+            
             switch response {
             case .success(let products):
                 self.products = products

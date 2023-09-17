@@ -21,6 +21,7 @@
 		861642562AB60E5B00F4F9AD /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 861642542AB60E5B00F4F9AD /* ProductTableViewCell.xib */; };
 		861642592AB6297600F4F9AD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 861642582AB6297600F4F9AD /* Kingfisher */; };
 		8616425B2AB629B300F4F9AD /* UIImageView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8616425A2AB629B300F4F9AD /* UIImageView + Extension.swift */; };
+		868E1D902AB6CB5400B8DC14 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868E1D8F2AB6CB5400B8DC14 /* EndPointType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		861642532AB60E5B00F4F9AD /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		861642542AB60E5B00F4F9AD /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
 		8616425A2AB629B300F4F9AD /* UIImageView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extension.swift"; sourceTree = "<group>"; };
+		868E1D8F2AB6CB5400B8DC14 /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				8616424B2AB5F43500F4F9AD /* APIManager.swift */,
+				868E1D8F2AB6CB5400B8DC14 /* EndPointType.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				861642502AB602CD00F4F9AD /* ProductViewModel.swift in Sources */,
 				8616424E2AB5F79800F4F9AD /* Constant.swift in Sources */,
 				8616422C2AB5EB8D00F4F9AD /* SceneDelegate.swift in Sources */,
+				868E1D902AB6CB5400B8DC14 /* EndPointType.swift in Sources */,
 				8616424A2AB5F18C00F4F9AD /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
